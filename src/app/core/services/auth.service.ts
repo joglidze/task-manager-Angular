@@ -80,8 +80,9 @@ export class AuthService extends BaseService {
   }
 
   signOut() {
-    this.cookieStorageService.deleteCookie('token');
     this.cookieStorageService.deleteCookie('refreshToken');
+    this.cookieStorageService.deleteCookie('token');
+
     this.cookieStorageService.deleteAllCookies();
     localStorage.clear();
   }

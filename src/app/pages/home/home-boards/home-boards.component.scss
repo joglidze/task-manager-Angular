@@ -1,7 +1,13 @@
+.main-cont {
+  width: 82vw;
+  margin: 0 auto;
+}
+
 .loop-cont {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+
   p {
     color: white;
     margin: 10px;

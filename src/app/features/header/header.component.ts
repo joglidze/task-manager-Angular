@@ -44,6 +44,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
       summary: 'You have Logged out Successfully',
     });
     this.authService.signOut();
+    this.router.navigateByUrl("auth/login");
+    
   }
 
   selectProject(projectId: number) {
