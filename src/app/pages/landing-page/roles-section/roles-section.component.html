@@ -1,0 +1,214 @@
+<div class="container-fluid bg-color">
+  <div class="row">
+    <div class="text-center m-5 p-5">
+      <h1 class="fs-1 m-5 fw-bold">
+        Assigning Roles for Effective Task Management
+      </h1>
+      <small
+        >Streamline your team's workflow and optimize productivity by assigning
+        clear roles and responsibilities.</small
+      >
+    </div>
+    <div>
+      <mat-tab-group
+        mat-stretch-tabs="true"
+        mat-align-tabs="center"
+        animationDuration="1000ms"
+      >
+        <mat-tab label="Super Admin">
+          <div class="row">
+            <div class="col-3 h-25 m-5">
+              <div class="card-body mt-5 border mb-5">
+                <h1>Project Management System</h1>
+                <h5 class="mb-2">User Permissions and Project Actions</h5>
+                <p class="card-text">
+                  Enables efficient project management through user permissions
+                  and actions, including user creation, project editing,
+                  deletion, and viewing. It also provides features like project
+                  creation, a dropdown menu, and a comprehensive project list.
+                </p>
+              </div>
+              <div class="card-body border">
+                <h1>Task Control And <br />Epic Control</h1>
+                <h5 class="mb-2">Effortlessly Create New Tasks And Epics</h5>
+                <p class="card-text">
+                  Effortlessly manage tasks and epics with ease using this
+                  project management system. Create new tasks, set due dates,
+                  assign team members, and add details for better organization
+                  and increased productivity.
+                  <span [ngClass]="{ expanded: isExpanded }">
+                    Additionally, enjoy comprehensive control over your epics,
+                    allowing you to efficiently manage, edit, delete, create,
+                    and view them. Experience a streamlined workflow and
+                    enhanced project management capabilities for effective task
+                    and epic management.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 mt-5">
+              <img
+                src="assets/images/superAdmin.png"
+                alt="avatar"
+                class="img-fluid mt-5"
+              />
+            </div>
+            <div class="col-3 h-25 m-5">
+              <div class="card-body border">
+                <h1>Role Management System</h1>
+                <h5 class="mb-2">Seamless Role Control and Permissions</h5>
+                <p class="card-text">
+                  Effortlessly manage roles and their associated permissions
+                  with this project's role management system. Create new roles,
+                  view existing roles, and utilize a dropdown menu for
+                  convenient role selection. Gain insight into role permissions
+                  and create new permissions as needed.
+                  <span [ngClass]="{ expanded: isExpanded2 }"
+                    >Delete roles, edit role details, and view comprehensive
+                    role information. Simplify your role management process and
+                    ensure effective access control within your project.</span
+                  >
+                </p>
+              </div>
+              <div class="card-body mt-5 border">
+                <h1>User Management System</h1>
+                <h5 class="mb-2">Seamless User Control and Permissions</h5>
+                <p class="card-text">
+                  Effortlessly manage users with this user management system.
+                  Administrators have the ability to create and edit users, view
+                  user details, delete users as needed, assign roles to users,
+                  and access a comprehensive list of all users.
+                  <span [ngClass]="{ expanded: isExpanded2 }">
+                    Designed for simplicity and efficiency, this system
+                    streamlines user management processes, ensuring smooth
+                    operation and effective user control.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Admin" class="w-100">
+          <div class="row">
+            <div class="col-3 h-25 m-5">
+              <div class="card-body border">
+                <h1>Task Control And <br />Epic Control</h1>
+                <h5 class="mb-2">Effortlessly Create New Tasks And Epics</h5>
+                <p class="card-text">
+                  Effortlessly manage tasks and epics with ease using this
+                  project management system. Create new tasks, set due dates,
+                  assign team members, and add details for better organization
+                  and increased productivity.
+                  <span [ngClass]="{ expanded: isExpanded }">
+                    Additionally, enjoy comprehensive control over your epics,
+                    allowing you to efficiently manage, edit, delete, create,
+                    and view them. Experience a streamlined workflow and
+                    enhanced project management capabilities for effective task
+                    and epic management.</span
+                  >
+                </p>
+              </div>
+              <div class="card-body mt-5 border">
+                <h1>Project Management System</h1>
+                <h5 class="mb-2">User Permissions and Project Actions</h5>
+                <p class="card-text">
+                  Enables efficient project management through user permissions
+                  and actions, including user creation, project editing,
+                  deletion, and viewing. It also provides features like project
+                  creation, a dropdown menu, and a comprehensive project list.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 mt-5">
+              <img
+                src="assets/images/vector.png"
+                alt="avatar"
+                class="img-fluid mt-5"
+              />
+            </div>
+            <div class="col-3 h-25 m-5">
+              <div class="card-body border">
+                <h1>Board and Issue Type Management</h1>
+                <h5 class="mb-2">Efficient Board and Issue Type Control</h5>
+                <p class="card-text">
+                  Efficiently manage boards and issue types with ease using the
+                  provided permissions. Create new boards to organize project
+                  tasks, view comprehensive lists of existing boards, and gain
+                  detailed insights into specific boards.
+                  <span [ngClass]="{ expanded: isExpanded1 }">
+                    Edit board details as needed and remove unnecessary boards
+                    from the system. Additionally, leverage the permissions to
+                    create, edit, view, and delete issue types, enhancing your
+                    ability to track and categorize project issues effectively.
+                    Streamline your project management process and stay
+                    organized with seamless board and issue type control.
+                  </span>
+                </p>
+              </div>
+              <div class="card-body mt-5 border">
+                <h1>User Management System</h1>
+                <h5 class="mb-2">Seamless User Control and Permissions</h5>
+                <p class="card-text">
+                  Effortlessly manage users with this user management system.
+                  Administrators have the ability to create and edit users, view
+                  user details, delete users as needed, assign roles to users,
+                  and access a comprehensive list of all users.
+                  <span [ngClass]="{ expanded: isExpanded2 }">
+                    Designed for simplicity and efficiency, this system
+                    streamlines user management processes, ensuring smooth
+                    operation and effective user control.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Customer">
+          <div class="row">
+            <div class="col-3 h-25 m-5">
+              <div class="card-body border">
+                <h1>Task Control</h1>
+                <h5 class="mb-2">Effortlessly Manage Tasks with Ease</h5>
+                <p class="card-text">
+                  Effortlessly handle tasks with ease using this project
+                  management system. Create new tasks, set due dates, assign
+                  team members, and add details for better organization and
+                  increased productivity. Experience a streamlined workflow and
+                  enhanced project management capabilities for effective task
+                  management.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 mt-5">
+              <img
+                src="assets/images/customer.png"
+                alt="avatar"
+                class="img-fluid mt-5"
+              />
+            </div>
+            <div class="col-3 h-25 m-5">
+              <div class="card-body border">
+                <h1>Board and Issue Type Management</h1>
+                <h5 class="mb-2">Efficient Board and Issue Type Control</h5>
+                <p class="card-text">
+                  Efficiently manage boards and issue types with ease using the
+                  provided permissions. Create new boards to organize project
+                  tasks, view comprehensive lists of existing boards, and gain
+                  detailed insights into specific boards.
+                  <span [ngClass]="{ expanded: isExpanded1 }">
+                    Edit board details as needed and remove unnecessary boards
+                    from the system. Additionally, leverage the permissions to
+                    create, edit, view, and delete issue types, enhancing your
+                    ability to track and categorize project issues effectively.
+                    Streamline your project management process and stay
+                    organized with seamless board and issue type control.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

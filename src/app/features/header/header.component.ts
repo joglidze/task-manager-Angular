@@ -43,9 +43,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
       detail: 'SUCCESS',
       summary: 'You have Logged out Successfully',
     });
+    this.router.navigateByUrl('auth/login');
     this.authService.signOut();
-    this.router.navigateByUrl("auth/login");
-    
   }
 
   selectProject(projectId: number) {
@@ -53,7 +52,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
   refreshPage() {
     const currentUrl = this.router.url;
-    this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
       this.router.navigate([currentUrl]);
     });
   }

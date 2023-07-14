@@ -8,12 +8,12 @@ import { MainLayoutComponent } from './features/main-layout.component';
 import { BacklogComponent } from './pages/backlog/backlog.component';
 
 import { ProjectFormComponent } from './pages/project/project-form/project-form.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'auth',
-    pathMatch: 'full',
+    component: LandingPageComponent,
   },
   {
     path: '',

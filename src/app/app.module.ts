@@ -18,11 +18,24 @@ import { ProjectInterceptor } from './core/interceptors/project.interceptor';
 import { MainLayoutModule } from './features/main-layout.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SharedModule } from './shared/shared.module';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { ProductivitySectionComponent } from './pages/landing-page/productivity-section/productivity-section.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatRadioModule } from '@angular/material/radio';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RolesSectionComponent } from './pages/landing-page/roles-section/roles-section.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    LandingPageComponent,
+    ProductivitySectionComponent,
+    RolesSectionComponent,
+  ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -31,6 +44,9 @@ import { SharedModule } from './shared/shared.module';
     MainLayoutModule,
     MatDialogModule,
     SharedModule,
+    MatRadioModule,
+    FormsModule,
+    MatTabsModule,
   ],
 
   providers: [
