@@ -10,10 +10,14 @@
     rgb(237, 80, 180)
   ) !important;
   color: black;
-  font-family:sans-serif;
-  h1{
+  font-family: sans-serif;
+  h1 {
     font-weight: 500 !important;
   }
   color: white;
-  
+}
+
+.wave {
+  padding: 0px;
+  z-index: 1;
 }
