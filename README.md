@@ -1,27 +1,56 @@
-# TaskManagerFront
+# 📋 Trello Plus - Task Manager App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Trello Plus is a powerful task manager application designed to help individuals and teams stay organized and efficient. With Trello Plus, users can take advantage of multiple roles, such as admin, super admin, and customer, each with specific capabilities to manage tasks, epics, issue types, users, and projects.Trello Plus offers a seamless user experience and robust backend functionality.
+ Demo: You can check out the live demo of Trello Plus [here](https://celadon-tiramisu-cca904.netlify.app).
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Key Features
 
-## Build
+- **Role-Based Access**: Trello Plus offers three distinct roles: admin, super admin, and customer, providing different levels of access and control over the application's features.
+- **Task Management**: Users can create, assign, and track tasks, allowing for seamless collaboration and progress tracking.
+- **Epics**: With Trello Plus, you can create epics to group related tasks together, making it easier to manage large-scale projects and track progress at a higher level.
+- **Issue Types**: Define different issue types to categorize tasks based on priority, urgency, or any custom criteria that suit your project's needs.
+- **User Management**: Super admins have the authority to add or delete users, granting control over the application's user base.
+- **Project Management**: Super admins can view and manage all projects within the application, including creating new projects and deleting existing ones.
+- **Project Deletion**: Super admins can delete projects, providing a mechanism to remove outdated or completed projects from the system.
+- **Project Overview**: Get a comprehensive view of project details, including tasks, epics, issue types, and users involved, for efficient project management.
+- **Boards**: Organize your tasks using boards, creating a visual representation of your projects.
+- **Drag and Drop**: Easily move tasks between different lists and boards using the intuitive drag and drop feature.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🎯 Roles and Capabilities
 
-## Running unit tests
+### Admin
+- Create and manage tasks
+- Assign tasks to users
+- Track task progress
+- View project overview
+- View and update task details
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Super Admin (in addition to Admin capabilities)
+- Create and manage epics
+- Define and manage issue types
+- Add and delete users
+- View all projects
+- Delete projects
 
-## Running end-to-end tests
+### Customer
+- View assigned tasks
+- Update task status
+- Comment on tasks
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚀 Getting Started
 
-## Further help
+To get started with Trello Plus, follow these steps:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone the repository: `https://github.com/joglidze/task-manager-Angular.git`
+2. Install the required dependencies: `npm install`
+3. Start the application: `npm start`
+
+## ❓ Questions and Support
+
+If you have any questions or need support, feel free to reach out to us at lucajoglidze@gmail.com. I wil be happy to assist you.
+
+
+
