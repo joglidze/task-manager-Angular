@@ -67,8 +67,10 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-.mat-mdc-tab-header .mdc-tab {
- border: 1px solid;
- border-radius: 10px;
- margin: 5px;
-}
+
+
+#roles .mat-mdc-tab-header .mdc-tab {
+  border: 1px solid !important;
+  border-radius: 10px !important;
+  margin: 5px !important;
+ }

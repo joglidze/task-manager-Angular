@@ -2,67 +2,113 @@
   <div>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top align-items-center w-100"
+      class="navbar navbar-expand-lg navbar-dark bg-primary align-items-center w-100 fixed-top"
+      style="position: sticky"
     >
-      <div class="container-fluid p-3">
+      <div class="container-fluid p-3 w-100">
         <img src="assets/images/logo.png" alt="logo" width="60px" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
+
+        <div class="navbar-collapse collapse" id="navbarExample01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+            <li class="nav-item active" (click)="scrollTop()">
+              <a class="nav-link">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+            <li class="nav-item active" (click)="scrollFeatures()">
+              <a class="nav-link">Features</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <li class="nav-item active" (click)="scrollRoles()">
+              <a class="nav-link">Roles</a>
             </li>
           </ul>
         </div>
+
+        <div class="example-action-buttons">
+          <button class="navbar-toggler" (click)="panel.toggle()">
+            <mat-icon style="color: white">list</mat-icon>
+          </button>
+        </div>
+      </div>
+      <mat-accordion class="mt-5 m-auto w-100">
+        <mat-expansion-panel
+          #panel
+          class="bg-primary text-center expansion-panel"
+        >
+          <ul class="me-auto mb-2 mb-lg-0">
+            <li
+              class="nav-item active m-2"
+              (click)="scrollTop(); panel.close()"
+            >
+              <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item m-2" (click)="scrollFeatures(); panel.close()">
+              <a class="nav-link">Features</a>
+            </li>
+            <li class="nav-item m-2" (click)="scrollRoles(); panel.close()">
+              <a class="nav-link">Roles</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link">
+                <!-- Icon -->
+
+                <button class="btn btn-light m-4" routerLink="/auth/register">
+                  Sign Up
+                </button>
+                <button class="btn btn-light" routerLink="/auth/login">
+                  Log In
+                </button>
+              </a>
+            </li>
+          </ul>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+
+        <button
+          class="btn btn-light m-4 navbar-collapse collapse"
+          routerLink="/auth/register"
+        >
+          Sign Up
+        </button>
+        <button
+          class="btn btn-light navbar-collapse collapse"
+          routerLink="/auth/login"
+        >
+          Log In
+        </button>
       </div>
     </nav>
-    <!-- Navbar -->
 
     <!-- Jumbotron -->
-    <div class="container-fluid m-auto bg-gradient">
-      <div class="row gap-5 align-items-center justify-content-center">
+    <div class="container-fluid m-auto bg-gradient" id="top">
+      <div class="row gap-5">
         <div
-          class="col-lg-4 ms-5"
-          data-aos="fade-right"
-          data-aos-easing="linear"
-          data-aos-duration="2000"
+          class="row mt-5 align-items-center media-query justify-content-center"
         >
-          <h1 class="fs-1 lh-base">
-            Trello brings all your tasks, teammates, and tools together
-          </h1>
-          <small class="fs-5 lh-base"
-            >Keep everything in the same place—even if your team isn’t.</small
+          <div
+            class="col-lg-4 ms-5 mt-5"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
           >
-        </div>
-        <div
-          class="col-lg-5"
-          data-aos="flip-right"
-          data-aos-easing="linear"
-          data-aos-duration="2000"
-        >
-          <img
-            src="https://images.ctfassets.net/rz1oowkt5gyp/75rDABL8fyMtNLlUAtBxrg/c5e145977a86c41c47e17c69410c64f7/TrelloUICollage_4x.png?w=960&fm=webp"
-            alt="illustration"
-          />
+            <h1 class="fs-1 lh-base">
+              Trello + brings all your tasks, teammates, and tools together
+            </h1>
+            <small class="fs-5 lh-base"
+              >Keep everything in the same place—even if your team isn’t.</small
+            >
+          </div>
+          <div
+            class="col-lg-5"
+            data-aos="flip-right"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+          >
+            <img
+              src="https://images.ctfassets.net/rz1oowkt5gyp/75rDABL8fyMtNLlUAtBxrg/c5e145977a86c41c47e17c69410c64f7/TrelloUICollage_4x.png?w=960&fm=webp"
+              alt="illustration"
+            />
+          </div>
         </div>
         <img
           src="assets/images/pattern - Copy.svg"
@@ -71,39 +117,38 @@
         />
       </div>
     </div>
-  </div>
-  <!-- productivity-->
-
-  <div>
-    <app-productivity-section></app-productivity-section>
-  </div>
-
-  <!-- Roles Section-->
-  <div>
-    <app-roles-section class="pb-5"></app-roles-section>
-  </div>
-  <div
-    class="text-center bg-gradient container-fluid"
-    style="padding: 80px"
-    data-aos="fade-down"
-    data-aos-duration="3000"
-  >
-    <div class="p-5 row justify-items-center">
-      <div class="mt-5">
-        <h1 class="fw-bold">GET STARTED WITH TRELLO</h1>
-      </div>
-      <div class="input-group mb-3 w-50 m-auto">
-        <input type="text" class="form-control" placeholder="Enter Email" />
-        <button
-          class="btn btn-primary ms-1"
-          type="button"
-          routerLink="/auth/login"
-        >
-          Sign Up
-        </button>
+    <div id="features">
+      <!-- productivity-->
+      <app-productivity-section></app-productivity-section>
+    </div>
+    <!-- Roles Section-->
+    <div id="roles">
+      <app-roles-section class="pb-5"></app-roles-section>
+    </div>
+    <div
+      class="text-center bg-gradient container-fluid"
+      style="padding: 80px"
+      data-aos="fade-down"
+      data-aos-duration="3000"
+    >
+      <div class="p-5 row justify-items-center">
+        <div class="mt-5">
+          <h1 class="fw-bold">GET STARTED WITH TRELLO</h1>
+        </div>
+        <div class="input-group mb-3 w-50 m-auto">
+          <input type="text" class="form-control" placeholder="Enter Email" />
+          <button
+            class="btn btn-primary ms-1"
+            type="button"
+            routerLink="/auth/login"
+          >
+            Sign Up
+          </button>
+        </div>
       </div>
     </div>
   </div>
+
   <div>
     <footer class="text-center text-white" style="background-color: #f1f1f1">
       <!-- Grid container -->
