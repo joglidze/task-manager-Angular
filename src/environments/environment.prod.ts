@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://task-manager-api-ochre.vercel.app/api/',
+  apiUrl: 'https://task-manager-api-ochre.vercel.app/api/',
 };
